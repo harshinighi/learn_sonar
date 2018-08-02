@@ -12,6 +12,13 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.8.RELEASE</version>
     </parent>
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <url>http://ec2-18-216-244-223.us-east-2.compute.amazonaws.com:9000</url>
+        </profile>
+    </profiles>
+                
 
     <dependencies>
         <dependency>
