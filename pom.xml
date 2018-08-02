@@ -13,12 +13,14 @@
     <profiles>
         <profile>
             <id>sonar</id>
-            <properties>
-            
-            <sonar.host.url>http://ec2-18-216-244-223.us-east-2.compute.amazonaws.com:9000</sonar.host.url>
-            </properties>
-                </profile>
-        </profiles>
+                <properties>
+                    <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                    <sonar.host.url>
+                    http://ec2-18-216-244-223.us-east-2.compute.amazonaws.com:9000
+                    </sonar.host.url>
+                </properties>
+        </profile>
+    </profiles>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
